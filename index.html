@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🚌 Bus Ticket Booking</h1>
+
+    <div class="images">
+        <img src="hrtc_skght_2.jpg" alt="Bus 1">
+        <img src="hrtc_snagar_2.jpeg" alt="Bus 2">
+    </div>
+
+    <div class="box">
+
+        <h2>Passenger Details</h2>
+
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label>Phone</label>
+        <input type="text" id="phone" placeholder="Enter phone number">
+
+        <h2>Journey Details</h2>
+
+        <label>From</label>
+        <select id="from">
+            <option value="Sarkaghat">Sarkaghat</option>
+            <option value="Sundar Nagar">Sundar Nagar</option>
+            <option value="Mandi">Mandi</option>
+            <option value="Joginder Nagar">Joginder Nagar</option>
+            <option value="Lad Bharol">Lad Bharol</option>
+            <option value="Dharampur">Dharampur</option>
+            <option value="Sadar Mandi">Sadar Mandi</option>
+        </select>
+
+        <label>To</label>
+        <select id="to">
+            <option value="Sundar Nagar">Sundar Nagar</option>
+            <option value="Sarkaghat">Sarkaghat</option>
+            <option value="Mandi">Mandi</option>
+            <option value="Joginder Nagar">Joginder Nagar</option>
+            <option value="Lad Bharol">Lad Bharol</option>
+            <option value="Dharampur">Dharampur</option>
+            <option value="Sadar Mandi">Sadar Mandi</option>
+        </select>
+
+        <label>Timing</label>
+        <select id="time">
+            <option>9:00 AM</option>
+            <option>12:00 PM</option>
+            <option>3:00 PM</option>
+            <option>6:00 PM</option>
+        </select>
+
+        <label>Seats</label>
+        <input type="number" id="seats" value="1" min="1">
+
+        <div class="buttons">
+            <button class="book-btn" onclick="bookTicket()">
+                Book Ticket
+            </button>
+
+            <button class="cancel-btn" onclick="cancelTicket()">
+                Cancel
+            </button>
+        </div>
+
+        <div id="result"></div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
